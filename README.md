@@ -11,7 +11,7 @@ This repo is meant to be a study resource. It does **not** contain assignment so
 | [Module 1](module_1_course_intro_and_foundations/) | Course Intro & Foundations |
 | [Module 2](module_2_introduction_to_computing/) | Introduction to Computing |
 | [Module 3](module_3_data_types_variables_and_expressions/) | Data Types, Variables, & Expressions |
-| [Module 4](module_4_advanced_data_types/) | Advanced Data Types: Strings, Lists, Tuples, Sets, & Dictionaries |
+| [Module 4](module_4_strings_lists_tuples_sets_and_dictionaries/) | Strings, Lists, Tuples, Sets, & Dictionaries |
 
 ## Course Resources
 
