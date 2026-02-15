@@ -40,6 +40,8 @@ This is where your programs start making decisions. Up until now, everything ran
 
 Without conditionals, your programs just do the same thing every time. Conditionals make them responsive: validating user input, controlling game logic, making calculations based on data, building menus, and handling errors. Every interactive program uses them.
 
+Back in the 1960s, computer scientists figured out that any algorithm can be built using just three control structures: **sequence** (instructions run in order), **selection** (choosing a path based on a condition), and **iteration** (repeating instructions). Conditionals are the selection part. We already know sequence from Modules 1-4, and loops (iteration) come in a future module.
+
 ### Comparison Operators
 
 These compare two values and return `True` or `False`:
@@ -54,6 +56,15 @@ These compare two values and return `True` or `False`:
 | `>=` | Greater than or equal to | `5 >= 6` | `False` |
 
 Big one to remember: `=` is assignment, `==` is comparison. Mixing them up is one of the most common beginner mistakes.
+
+There's also a difference between `==` and `is`. `==` checks if two values are equal. `is` checks if two variables point to the same object in memory. For most comparisons, you want `==`.
+
+```python
+a = [1, 2, 3]
+b = [1, 2, 3]
+print(a == b)    # True (same values)
+print(a is b)    # False (different objects in memory)
+```
 
 Strings can be compared too. They're compared based on Unicode values (basically alphabetical order), and the comparison is case-sensitive:
 
@@ -274,7 +285,7 @@ if (x > 5 and y > 10) or z < 2:
 |---------|-------------|-----|
 | Using `=` instead of `==` | SyntaxError | Use `==` for comparison |
 | Forgetting the colon `:` | SyntaxError | Always end if/elif/else with `:` |
-| Wrong indentation | Wrong code runs or IndentationError | Use 4 spaces consistently |
+| Wrong indentation | Wrong code runs or IndentationError | Use 4 spaces consistently, don't mix tabs and spaces, and make sure each `else` lines up with its `if` |
 | Writing `else if` instead of `elif` | SyntaxError | Python uses `elif` |
 | Putting a condition after `else` | SyntaxError | `else` has no condition, just `:` |
 | Wrong elif order | Wrong branch executes | Check highest values first |
