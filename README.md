@@ -15,7 +15,7 @@ This repo is meant to be a study resource. It does **not** contain assignment so
 | [Module 5](module_5_conditional_statements/) | Conditional Statements |
 | [Module 6](module_6_loops_part_1/) | Loops Part 1: While and For Loops |
 | [Midterm Study Guide](midterm_exam_review/csc101_midterm_study_guide.md) | Modules 1–6 Review |
-| [Module 7](module_7_loop_part2_nested_loops_loops_for_data_structures_and_exceptions/) | Nested Loops & Exceptions |
+| [Module 7](module_7_loop_part2_nested_loops_loops_for_data_structures_and_exceptions/) | Loop Part2 - Nested Loops, Loops for data structures, and Exceptions |
 
 ## Course Resources
 
