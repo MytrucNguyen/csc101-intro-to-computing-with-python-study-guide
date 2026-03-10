@@ -23,8 +23,8 @@ Based on everything we covered together in Modules 1–6.
 
 ## Running Python
 
-- **Interactive mode** — type `python` in terminal, get `>>>` prompt, execute line by line
-- **Script mode** — write code in a `.py` file, run with `python filename.py` or F5 in IDLE
+- **Interactive mode** - type `python` in terminal, get `>>>` prompt, execute line by line
+- **Script mode** - write code in a `.py` file, run with `python filename.py` or F5 in IDLE
 
 ## Basic Syntax & Structure
 
@@ -35,7 +35,7 @@ print("Pi is", math.pi)             # output with print()
 name = input("Enter your name: ")   # get user input
 ```
 
-- Python uses **indentation** (4 spaces) to define code blocks — no curly braces
+- Python uses **indentation** (4 spaces) to define code blocks - no curly braces
 - Files saved with `.py` extension
 - `print()` displays output, `input()` reads user input
 
@@ -47,7 +47,7 @@ name = input("Enter your name: ")   # get user input
 
 | Component | What It Does |
 |-----------|-------------|
-| **CPU** | The "brain" — executes instructions, ~3 billion times/sec |
+| **CPU** | The "brain" - executes instructions, ~3 billion times/sec |
 | **RAM** | Temporary, fast, volatile (lost when powered off) |
 | **Storage (HDD/SSD)** | Permanent, non-volatile, slower, larger capacity |
 | **Input Devices** | Keyboard, mouse, microphone, camera |
@@ -58,15 +58,15 @@ name = input("Enter your name: ")   # get user input
 
 The CPU processes instructions in a continuous loop:
 
-1. **Fetch** — retrieve the next instruction from memory (RAM)
-2. **Decode** — figure out what the instruction means
-3. **Execute** — carry out the instruction (math, move data, etc.)
+1. **Fetch** - retrieve the next instruction from memory (RAM)
+2. **Decode** - figure out what the instruction means
+3. **Execute** - carry out the instruction (math, move data, etc.)
 
 Then repeat. This cycle happens billions of times per second.
 
 ### CPU Speed (GHz)
 
-**GHz (Gigahertz)** measures the CPU's clock speed — how many billions of cycles per second. A 3.0 GHz CPU performs approximately 3 billion fetch-decode-execute cycles per second. Higher GHz generally means faster processing.
+**GHz (Gigahertz)** measures the CPU's clock speed - how many billions of cycles per second. A 3.0 GHz CPU performs approximately 3 billion fetch-decode-execute cycles per second. Higher GHz generally means faster processing.
 
 ## How Computers Store & Process Data
 
@@ -80,7 +80,7 @@ Then repeat. This cycle happens billions of times per second.
 
 | System | Base | Digits | Python Function |
 |--------|------|--------|----------------|
-| Decimal | 10 | 0–9 | — |
+| Decimal | 10 | 0–9 | - |
 | Binary | 2 | 0, 1 | `bin()` |
 | Octal | 8 | 0–7 | `oct()` |
 | Hexadecimal | 16 | 0–9, A–F | `hex()` |
@@ -110,30 +110,30 @@ Each position is a power of 2: `1010` = (1×8) + (0×4) + (1×2) + (0×1) = **10
 
 ## Software (System vs. Application)
 
-- **System software** — OS (Windows, macOS, Linux), drivers, utilities
-- **Application software** — programs you use (browsers, games, Word)
+- **System software** - OS (Windows, macOS, Linux), drivers, utilities
+- **Application software** - programs you use (browsers, games, Word)
 
 ## Programming Languages
 
-- **High-level** (Python, Java) — human-readable, must be translated
-- **Low-level** (Assembly, Machine Code) — closer to hardware
-- **Compiled** (C, C++) — translated all at once before running
-- **Interpreted** (Python) — translated and executed line by line
+- **High-level** (Python, Java) - human-readable, must be translated
+- **Low-level** (Assembly, Machine Code) - closer to hardware
+- **Compiled** (C, C++) - translated all at once before running
+- **Interpreted** (Python) - translated and executed line by line
 
 ## Algorithm Basics
 
 An **algorithm** is a step-by-step procedure for solving a problem. Three characteristics: **definite** (each step is clear), **finite** (it ends), **effective** (each step is doable).
 
-**Decomposition** — breaking a large problem into smaller, manageable parts.
+**Decomposition** - breaking a large problem into smaller, manageable parts.
 
 ## Computer Architecture (SDLC)
 
 Four core phases: **Planning → Design → Implementation → Testing**
 
-1. **Planning** — define the problem, gather requirements
-2. **Design** — create blueprint and architecture
-3. **Implementation** — write the actual code
-4. **Testing** — find bugs, verify correctness
+1. **Planning** - define the problem, gather requirements
+2. **Design** - create blueprint and architecture
+3. **Implementation** - write the actual code
+4. **Testing** - find bugs, verify correctness
 
 ---
 
@@ -150,7 +150,7 @@ Four core phases: **Planning → Design → Implementation → Testing**
 
 Check type with `type()`: `type(42)` → `<class 'int'>`
 
-Python is **dynamically typed** — no type declarations needed, types can change.
+Python is **dynamically typed** - no type declarations needed, types can change.
 
 ## Variables
 
@@ -185,10 +185,10 @@ Variables are named containers. Assign with `=`.
 
 ### Operator Precedence (PEMDAS)
 
-1. `()` Parentheses — highest priority
+1. `()` Parentheses - highest priority
 2. `**` Exponentiation (right-to-left)
-3. `*`, `/`, `//`, `%` — left-to-right
-4. `+`, `-` — left-to-right
+3. `*`, `/`, `//`, `%` - left-to-right
+4. `+`, `-` - left-to-right
 
 Example: `5 + 3 * 2` = `11` (not 16, multiplication first)
 
@@ -209,7 +209,7 @@ Example: `5 + 3 * 2` = `11` (not 16, multiplication first)
 
 ## Input & Output
 
-### `input()` — ALWAYS returns a string
+### `input()` - ALWAYS returns a string
 
 ```python
 name = input("Enter your name: ")           # returns str
@@ -336,7 +336,7 @@ Same indexing as strings: `fruits[0]` → `"apple"`, `fruits[-1]` → `"cherry"`
 
 ### List Math Functions
 
-`sum(list)`, `max(list)`, `min(list)` — work on lists of numbers
+`sum(list)`, `max(list)`, `min(list)` - work on lists of numbers
 
 ### List Operations
 
@@ -349,8 +349,8 @@ Same indexing as strings: `fruits[0]` → `"apple"`, `fruits[-1]` → `"cherry"`
 
 ```python
 original = [1, 2, 3]
-reference = original       # SAME list — changes affect both
-copy = original[:]         # NEW list — independent copy
+reference = original       # SAME list - changes affect both
+copy = original[:]         # NEW list - independent copy
 copy2 = original.copy()   # also a new copy
 ```
 
@@ -370,8 +370,8 @@ Only two methods: `.count()` and `.index()`. Can be used as dictionary keys (lis
 **Unordered** collections of **unique** elements in curly braces `{}`. No duplicates, no indexing.
 
 ```python
-my_set = {1, 2, 3, 3}     # {1, 2, 3} — duplicates removed
-empty_set = set()          # NOT {} — that creates a dict
+my_set = {1, 2, 3, 3}     # {1, 2, 3} - duplicates removed
+empty_set = set()          # NOT {} - that creates a dict
 ```
 
 **Methods:** `.add()`, `.remove()`, `.discard()`, `.pop()`
@@ -452,7 +452,7 @@ else:
     grade = "F"
 ```
 
-**Key rule:** `elif` stops at the **first True condition** — only one block runs. Multiple separate `if` statements are **independent** — all conditions are checked.
+**Key rule:** `elif` stops at the **first True condition** - only one block runs. Multiple separate `if` statements are **independent** - all conditions are checked.
 
 ## Nested Conditionals
 
@@ -546,7 +546,7 @@ Repeats as long as condition is True.
 count = 0
 while count < 5:
     print(count)
-    count += 1     # DON'T forget to update — or infinite loop!
+    count += 1     # DON'T forget to update - or infinite loop!
 ```
 
 ## Infinite Loops & How to Avoid Them
@@ -554,7 +554,7 @@ while count < 5:
 An infinite loop never stops because the condition never becomes False.
 
 ```python
-# INFINITE LOOP — forgot to increment
+# INFINITE LOOP - forgot to increment
 count = 0
 while count < 5:
     print(count)
@@ -572,13 +572,13 @@ while count < 5:
 | `pass` | Do nothing (placeholder) |
 
 ```python
-# break — exit early
+# break - exit early
 for i in range(10):
     if i == 5:
         break
     print(i)       # prints 0, 1, 2, 3, 4
 
-# continue — skip one iteration
+# continue - skip one iteration
 for i in range(5):
     if i == 2:
         continue
@@ -594,7 +594,7 @@ for i in range(5):
 | Python manages the loop variable | You manage the loop variable yourself |
 
 ```python
-# Same output — for is cleaner for this task
+# Same output - for is cleaner for this task
 for i in range(5):       # Python handles i
     print(i)
 
@@ -642,16 +642,16 @@ for i in range(2):
 
 ---
 
-# Quick Reference — Must-Know Facts
+# Quick Reference - Must-Know Facts
 
-1. `input()` **always** returns a string — cast with `int()` or `float()` for math
+1. `input()` **always** returns a string - cast with `int()` or `float()` for math
 2. `//` drops the decimal (floor division), `%` gives the remainder
-3. `==` is comparison, `=` is assignment — don't mix them up
-4. Strings are **immutable** — methods return new strings
-5. Lists are **mutable** — methods modify in place
-6. `{}` creates an empty **dict**, not a set — use `set()` for empty set
-7. `elif` stops at first True — only one block runs
-8. Multiple `if` statements are independent — all are checked
+3. `==` is comparison, `=` is assignment - don't mix them up
+4. Strings are **immutable** - methods return new strings
+5. Lists are **mutable** - methods modify in place
+6. `{}` creates an empty **dict**, not a set - use `set()` for empty set
+7. `elif` stops at first True - only one block runs
+8. Multiple `if` statements are independent - all are checked
 9. `and` needs **both** True, `or` needs **at least one** True
 10. `break` exits the loop, `continue` skips to next iteration
 11. `while` loops need their condition to eventually become False
