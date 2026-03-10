@@ -1,4 +1,4 @@
-# nested loop common mistakes — the stuff that trips everyone up
+# nested loop common mistakes - the stuff that trips everyone up
 # and the right way to do it
 
 
@@ -6,7 +6,7 @@
 # the inner loop overwrites the outer loop's variable
 print("=== Same variable name (wrong) ===")
 for i in range(3):
-    for i in range(2):  # WRONG — this overwrites the outer i
+    for i in range(2):  # WRONG - this overwrites the outer i
         print(i, end=" ")
     print(f"  ← outer i is now {i}")
 # after the inner loop, i is whatever the inner loop left it as
@@ -42,7 +42,7 @@ print()
 print("=== Reset j inside outer loop (correct) ===")
 i = 0
 while i < 3:
-    j = 0  # THIS IS THE KEY — reset j every time
+    j = 0  # THIS IS THE KEY - reset j every time
     while j < 3:
         print(f"({i},{j})", end=" ")
         j += 1
@@ -61,7 +61,7 @@ for i in range(3):
             break  # only exits the j loop, not the i loop
         print(f"({i},{j})", end=" ")
     print(f"  ← i={i} still runs, break only killed the inner loop")
-# you get (0,0), (1,0), (2,0) — the outer loop keeps going
+# you get (0,0), (1,0), (2,0) - the outer loop keeps going
 print()
 
 # if you need to break out of BOTH loops, use a flag
@@ -87,11 +87,11 @@ grid = [[1, 2], [3, 4], [5, 6]]
 # this grid has 3 rows and 2 columns
 # len(grid) = 3 (rows), len(grid[0]) = 2 (columns)
 
-# WRONG way — using len(grid) for columns too
+# WRONG way - using len(grid) for columns too
 print("Wrong (crashes on non-square grids):")
 try:
     for i in range(len(grid)):
-        for j in range(len(grid)):  # WRONG — should be len(grid[i])
+        for j in range(len(grid)):  # WRONG - should be len(grid[i])
             print(grid[i][j], end=" ")
         print()
 except IndexError as e:
@@ -99,7 +99,7 @@ except IndexError as e:
     print("  because len(grid) is 3 but each row only has 2 columns")
 print()
 
-# RIGHT way — use len(grid[i]) for columns
+# RIGHT way - use len(grid[i]) for columns
 print("Correct:")
 for i in range(len(grid)):
     for j in range(len(grid[i])):  # columns = len of current row
@@ -114,7 +114,7 @@ print("=== print() inside inner loop (wrong for grid) ===")
 for i in range(3):
     for j in range(3):
         print("*", end="")
-        print()  # WRONG — this is inside the inner loop, newline after every star
+        print()  # WRONG - this is inside the inner loop, newline after every star
 # you get each star on its own line instead of a row
 print()
 
@@ -122,7 +122,7 @@ print("=== print() outside inner loop (correct for grid) ===")
 for i in range(3):
     for j in range(3):
         print("*", end="")
-    print()  # RIGHT — newline after the inner loop finishes the row
+    print()  # RIGHT - newline after the inner loop finishes the row
 # you get a proper 3x3 grid
 print()
 
@@ -130,6 +130,6 @@ print()
 # === QUICK REFERENCE ===
 # 1. Use different variable names for outer and inner loops
 # 2. In while loops, reset the inner variable INSIDE the outer loop
-# 3. break only exits ONE loop — use a flag for multiple
+# 3. break only exits ONE loop - use a flag for multiple
 # 4. For 2D lists: rows = len(grid), columns = len(grid[i])
-# 5. Check your indentation — one tab changes which loop owns the line
+# 5. Check your indentation - one tab changes which loop owns the line

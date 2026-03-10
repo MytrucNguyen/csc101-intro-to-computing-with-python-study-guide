@@ -1,4 +1,4 @@
-# exception common mistakes — what goes wrong and how to fix it
+# exception common mistakes - what goes wrong and how to fix it
 
 
 # === MISTAKE 1: bare except catches EVERYTHING ===
@@ -20,7 +20,7 @@ print("=== Specific except (much better) ===")
 try:
     result = my_list[5]
 except IndexError:
-    print("Index out of range — list only has 3 items")
+    print("Index out of range - list only has 3 items")
     # now you know exactly what happened and can fix it
 except ValueError:
     print("Bad value")
@@ -58,7 +58,7 @@ print()
 # catch = someone else's code might fail (user input, files, network)
 # raise = YOUR code detected something wrong and wants to signal it
 
-# catching — you're protecting against external failure
+# catching - you're protecting against external failure
 print("=== Catching (protecting against bad input) ===")
 user_input = "abc"
 try:
@@ -67,7 +67,7 @@ except ValueError:
     print(f"'{user_input}' is not a number")
 print()
 
-# raising — you're enforcing your own rules
+# raising - you're enforcing your own rules
 print("=== Raising (enforcing your rules) ===")
 
 
@@ -86,7 +86,7 @@ try:
 except ValueError as e:
     print(f"Error: {e}")
 
-# invalid input — your function catches it before doing bad math
+# invalid input - your function catches it before doing bad math
 try:
     tip = calculate_tip(-10, 20)
     print(f"Tip: ${tip:.2f}")
@@ -166,7 +166,7 @@ print()
 # exceptions are for EXCEPTIONAL situations, not everyday logic
 print("=== Don't use exceptions as if-statements ===")
 
-# WRONG — using try/except to check if a key exists
+# WRONG - using try/except to check if a key exists
 my_dict = {"name": "Alice", "age": 25}
 print("Bad way (using exceptions for normal checks):")
 try:
@@ -175,7 +175,7 @@ except KeyError:
     phone = "N/A"
 print(f"  Phone: {phone}")
 
-# BETTER — just check first with 'in' or .get()
+# BETTER - just check first with 'in' or .get()
 print("Better way (check first):")
 phone = my_dict.get("phone", "N/A")
 print(f"  Phone: {phone}")
@@ -186,8 +186,8 @@ print()
 
 # === QUICK REFERENCE ===
 # 1. Always catch specific exception types, never bare except:
-# 2. Keep try blocks small — only the line that might fail
+# 2. Keep try blocks small - only the line that might fail
 # 3. Catch = protect against external failure. Raise = enforce your own rules
-# 4. Code after a failing line in try is skipped — plan for that
+# 4. Code after a failing line in try is skipped - plan for that
 # 5. else = runs on success. finally = runs always (cleanup)
-# 6. Don't use exceptions as if-statements — check first when you can
+# 6. Don't use exceptions as if-statements - check first when you can
