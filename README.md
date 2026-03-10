@@ -14,6 +14,7 @@ This repo is meant to be a study resource. It does **not** contain assignment so
 | [Module 4](module_4_strings_lists_tuples_sets_and_dictionaries/) | Strings, Lists, Tuples, Sets, & Dictionaries |
 | [Module 5](module_5_conditional_statements/) | Conditional Statements |
 | [Module 6](module_6_loops_part_1/) | Loops Part 1: While and For Loops |
+| [Module 7](module_7_nested_loops_and_exceptions/) | Nested Loops & Exceptions |
 
 ## Course Resources
 
