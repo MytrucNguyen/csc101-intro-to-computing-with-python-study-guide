@@ -17,6 +17,7 @@ This repo is meant to be a study resource. It does **not** contain assignment so
 | [Midterm Study Guide](midterm_exam_review/csc101_midterm_study_guide.md) | Modules 1–6 Review |
 | [Module 7](module_7_loop_part2_nested_loops_loops_for_data_structures_and_exceptions/) | Nested Loops & Exceptions |
 | [Module 8](module_8_functions_part_1/) | Functions Part 1 |
+| [Module 9](module_9_functions_part_2/) | Functions Part 2: Advanced Functions & Modules |
 
 ## Course Resources
 
