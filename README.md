@@ -18,6 +18,7 @@ This repo is meant to be a study resource. It does **not** contain assignment so
 | [Module 7](module_7_loop_part2_nested_loops_loops_for_data_structures_and_exceptions/) | Nested Loops & Exceptions |
 | [Module 8](module_8_functions_part_1/) | Functions Part 1 |
 | [Module 9](module_9_functions_part_2/) | Functions Part 2: Advanced Functions & Modules |
+| [Module 10](module_10_classes_part_1/) | Classes Part 1: Introduction to OOP |
 
 ## Course Resources
 
