@@ -8,17 +8,18 @@ This repo is meant to be a study resource. It does **not** contain assignment so
 
 | Module | Topic |
 |--------|-------|
-| [Module 1](module_01_course_intro_and_foundations/) | Course Intro & Foundations |
-| [Module 2](module_02_introduction_to_computing/) | Introduction to Computing |
-| [Module 3](module_03_data_types_variables_and_expressions/) | Data Types, Variables, & Expressions |
-| [Module 4](module_04_strings_lists_tuples_sets_and_dictionaries/) | Strings, Lists, Tuples, Sets, & Dictionaries |
-| [Module 5](module_05_conditional_statements/) | Conditional Statements |
-| [Module 6](module_06_loops_part_1/) | Loops Part 1: While and For Loops |
+| [Module 1](module_1_course_intro_and_foundations/) | Course Intro & Foundations |
+| [Module 2](module_2_introduction_to_computing/) | Introduction to Computing |
+| [Module 3](module_3_data_types_variables_and_expressions/) | Data Types, Variables, & Expressions |
+| [Module 4](module_4_strings_lists_tuples_sets_and_dictionaries/) | Strings, Lists, Tuples, Sets, & Dictionaries |
+| [Module 5](module_5_conditional_statements/) | Conditional Statements |
+| [Module 6](module_6_loops_part_1/) | Loops Part 1: While and For Loops |
 | [Midterm Study Guide](midterm_exam_review/csc101_midterm_study_guide.md) | Modules 1–6 Review |
-| [Module 7](module_07_loop_part2_nested_loops_loops_for_data_structures_and_exceptions/) | Nested Loops & Exceptions |
-| [Module 8](module_08_functions_part_1/) | Functions Part 1 |
-| [Module 9](module_09_functions_part_2/) | Functions Part 2: Advanced Functions & Modules |
+| [Module 7](module_7_loop_part2_nested_loops_loops_for_data_structures_and_exceptions/) | Nested Loops & Exceptions |
+| [Module 8](module_8_functions_part_1/) | Functions Part 1 |
+| [Module 9](module_9_functions_part_2/) | Functions Part 2: Advanced Functions & Modules |
 | [Module 10](module_10_classes_part_1/) | Classes Part 1: Introduction to OOP |
+| [Module 11](module_11_file_io/) | File I/O |
 
 ## Course Resources
 
