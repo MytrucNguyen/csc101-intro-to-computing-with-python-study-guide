@@ -20,6 +20,7 @@ This repo is meant to be a study resource. It does **not** contain assignment so
 | [Module 9](module_9_functions_part_2/) | Functions Part 2: Advanced Functions & Modules |
 | [Module 10](module_10_classes_part_1/) | Classes Part 1: Introduction to OOP |
 | [Module 11](module_11_file_io/) | File I/O |
+| [Final Exam Study Guide](final_exam_review/csc101_final_study_guide.md) | Modules 1–11 Review |
 
 ## Course Resources
 
